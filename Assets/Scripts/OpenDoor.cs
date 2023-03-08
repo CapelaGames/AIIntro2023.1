@@ -40,7 +40,6 @@ public class OpenDoor : MonoBehaviour
                 {//if door is closed, open it
                     goal = _openPosition;
                 }
-                
                 yield return new WaitForSeconds(WaitTime);
             }
             else
