@@ -395,6 +395,7 @@ GameObject:
   - component: {fileID: 319515519}
   - component: {fileID: 319515520}
   - component: {fileID: 319515521}
+  - component: {fileID: 319515522}
   m_Layer: 0
   m_Name: AIAgent
   m_TagString: Untagged
@@ -540,6 +541,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bd0199c923a72149ade6c9c32a3e897, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &319515522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319515513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b813ef19c62f7714db21a1cf5fcd479f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 10
+  _grassSpeed: 5
 --- !u!1 &425049778
 GameObject:
   m_ObjectHideFlags: 0
@@ -813,7 +828,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Size: {x: 1.2531354, y: 1.61, z: 1.0974331}
+  m_Size: {x: 1.22, y: 1.61, z: 1.0974331}
   m_Center: {x: 0, y: 0, z: 0}
   m_Area: 4
   m_AffectedAgents: ffffffff

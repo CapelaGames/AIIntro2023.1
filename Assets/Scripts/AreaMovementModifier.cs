@@ -14,19 +14,16 @@ public class AreaMovementModifier : MonoBehaviour
         //surface we are on (hit)
         NavMeshHit hit;
         _agent.SamplePathPosition(-1, 0.0f, out hit);
-        
         //The mask we want to compair to.
         int mask = 1 << NavMesh.GetAreaFromName("Grass");
-        mask = mask | 1 << NavMesh.GetAreaFromName("Ice");
-        
         // does the hit match the mask
         int filtered = hit.mask & mask;
 
-        if (filtered == 0) //not on grass or ice
+        if (filtered == 0) //not on grass
         {
             _agent.speed = _speed;
         }
-        else // we are on grass or ice
+        else // we are on grass
         {
             _agent.speed = _grassSpeed;
         }
